@@ -1,6 +1,6 @@
 # Google Workspace MCP — public edition
 
-GmailとGoogle CalendarをMCPツールとして扱うTypeScript製のローカルサーバーです。
+GmailとGoogle CalendarをMCPツールとして扱うTypeScript製のローカルサーバーです。AIが複数アカウントのgmailとカレンダーを操作できるようにすることを目的に作成しました。
 個人運用向けの非公開実装から、公開用に設定・履歴・機能の既定値を分離して作成しました。
 過去の開発履歴や実アカウントの設定・データは引き継いでいません。
 
