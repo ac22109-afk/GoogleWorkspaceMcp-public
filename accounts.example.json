@@ -1,0 +1,19 @@
+{
+  "accounts": [
+    {
+      "alias": "school",
+      "email": "your.school@example.com",
+      "displayName": "School"
+    },
+    {
+      "alias": "job",
+      "email": "job@example.com",
+      "displayName": "Job"
+    },
+    {
+      "alias": "private",
+      "email": "private@example.com",
+      "displayName": "Private"
+    }
+  ]
+}

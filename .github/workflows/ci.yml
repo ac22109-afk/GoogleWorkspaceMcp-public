@@ -1,0 +1,20 @@
+name: Verify public source
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm run check:public
+      - run: npm run check
+      - run: npm test
+      - run: npm run build
+      - run: npm run test:mcp
+      - run: npm audit --omit=dev --audit-level=high
